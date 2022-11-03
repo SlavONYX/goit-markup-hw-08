@@ -23,6 +23,7 @@ svg {
   margin-right: auto;
   margin-left: auto;
   align-items: center;
+  box-sizing: border-box;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -178,6 +179,7 @@ svg {
 @media screen and (min-width: 768px) {
   .main-contact__link {
     padding: 0;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.1666666667;
   }
@@ -193,8 +195,27 @@ svg {
   display: flex;
   margin-right: 10px;
   fill: currentColor;
-  box-sizing: border-box;
-  height: auto;
+}
+
+.main-contact__link-icon--size-envelope {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .main-contact__link-icon--size-envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.main-contact__link-icon--size-smartphone {
+  width: 10px;
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .main-contact__link-icon--size-smartphone {
+    height: 16px;
+  }
 }
 
 .header {
@@ -205,7 +226,7 @@ svg {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header .container {
     display: flex;
   }
@@ -838,12 +859,29 @@ svg {
   left: 0;
   margin: auto;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 100%;
   opacity: 1;
   background-color: #ffffff;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close-button {
@@ -876,7 +914,7 @@ svg {
   margin-top: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.15;
   text-align: center;
   color: #000;
   margin-bottom: 5px;
@@ -885,6 +923,7 @@ svg {
 .modal-form {
   font-size: 12px;
   line-height: 1.5;
+  letter-spacing: 0.01em;
 }
 
 .modal-label {
@@ -976,37 +1015,6 @@ svg {
   width: 100%;
 }
 
-.form-subscribe {
-  box-sizing: border-box;
-}
-
-.form-subscribe__form {
-  display: flex;
-  justify-content: center;
-}
-
-.form-subscribe {
-  width: 360px;
-  height: 50px;
-  padding: 15px 16px 15px 16px;
-  color: #2196f3;
-  background-color: #2f303a;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-subscribe__footer {
-  margin-right: 0;
-}
-
-.form-subscribe:hover,
-.form-subscribe:focus {
-  border: 1px solid #2196f3;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .checkbox {
   position: absolute;
   opacity: 0;
@@ -1092,6 +1100,18 @@ svg {
 .submit:hover,
 .submit:focus {
   background-color: #188ce8;
+}
+
+.check-text {
+  display: flex;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575;
 }
 
 .footer {
@@ -1253,15 +1273,6 @@ svg {
   }
 }
 
-.check-text {
-  display: flex;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
-  color: #757575;
-}
-
 .form-contract {
   margin-left: 3px;
 }
@@ -1276,6 +1287,65 @@ svg {
 .submit:hover,
 .submit:focus {
   background-color: #188ce8;
+}
+
+.subscribe {
+  position: relative;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe {
+    max-width: 450px;
+  }
+}
+
+.form-subscribe__form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-subscribe {
+  box-sizing: border-box;
+  height: 50px;
+  padding: 15px 16px 15px 16px;
+  color: #2196f3;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .form-subscribe {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form-subscribe {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-subscribe {
+    width: 360px;
+  }
+}
+
+.form-subscribe__footer {
+  margin-right: 0;
+}
+
+.form-subscribe:hover,
+.form-subscribe:focus {
+  border: 1px solid #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter {

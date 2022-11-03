@@ -1,14 +1,4 @@
 
-
-.check-text {
-    display: flex;
-    cursor: pointer;
-    font-weight: 400;
-    font-size: $mainFontSize;
-    line-height: calc(24 / 14);
-    color: $other-text-color;
-}
-
 .form-contract {
     margin-left: 3px;
 }
@@ -25,4 +15,61 @@
 .submit:hover,
 .submit:focus {
     background-color: #188ce8;
+}
+
+.subscribe{
+    position: relative;
+        // display: flex;
+        align-items: center;
+}
+
+
+.subscribe {
+    @media screen and (max-width:767px) {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        max-width: 450px;
+    }
+}
+
+.form-subscribe__form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-subscribe {
+    box-sizing: border-box;
+    height: 50px;
+    padding: 15px 16px 15px 16px;
+    color: $rare-color;
+    background-color: $background-dark;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width:479px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 360px;
+    }
+}
+
+.form-subscribe__footer {
+    margin-right: 0;
+}
+
+.form-subscribe:hover,
+.form-subscribe:focus {
+    border: 1px solid $rare-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
