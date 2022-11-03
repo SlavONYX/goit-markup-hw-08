@@ -1,0 +1,20 @@
+@import "./utils/_variables.scss";
+@import "./utils/_base.scss";
+@import "./utils/mixin";
+@import "./components/header/_main-nav.scss";
+@import "./components/header/_header.scss";
+@import "./components/header/menu";
+@import "./components/logo/_logo.scss";
+@import "./components/index/_section-banner.scss";
+@import "./components/index/_section-features.scss";
+@import "./components/index/_section-about.scss";
+@import "./components/index/_section-team.scss";
+@import "./components/index/_section-clients.scss";
+@import "./components/index/_social-networks.scss";
+@import "./components/index/_modal.scss";
+@import "./components/footer/_footer.scss";
+@import "./components/footer/_footer-networks.scss";
+@import "./components/footer/_footer-subscribe.scss";
+@import "./components/portfolio/_filter-button.scss";
+@import "./components/portfolio/_projects.scss";
+

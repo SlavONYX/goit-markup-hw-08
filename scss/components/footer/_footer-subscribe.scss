@@ -1,0 +1,28 @@
+
+
+.check-text {
+    display: flex;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: $mainFontSize;
+    line-height: calc(24 / 14);
+    color: $other-text-color;
+}
+
+.form-contract {
+    margin-left: 3px;
+}
+
+    .submit--footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+}
+
+
+
+.submit:hover,
+.submit:focus {
+    background-color: #188ce8;
+}

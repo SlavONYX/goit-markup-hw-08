@@ -1,0 +1,140 @@
+ .section-banner {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)), url("../images/mobile/banner/Image-1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $main-text-color;
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(("../images/mobile/banner/Image-2x.jpg"));
+        }
+    
+    @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(("../images/mobile/banner/Image-3x.jpg"));
+        }
+
+        @media screen and (min-width:500px) {
+    
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url("../images/tablet/banner/Image-1x.jpg");
+    
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(("../images/tablet/banner/Image-2x.jpg"));
+            }
+    
+            @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(("../images/tablet/banner/Image-3x.jpg"));
+            }
+        }
+
+                @media screen and (min-width:850px) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url("../images/desktop/banner/Image-1x.jpg");
+        
+                    @media screen and (min-device-pixel-ratio: 2),
+                    screen and (min-resolution: 192dpi),
+                    screen and (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url(("../images/desktop/banner/Image-2x.jpg"));
+                    }
+        
+                    @media screen and (min-device-pixel-ratio: 3),
+                    screen and (min-resolution: 288dpi),
+                    screen and (min-resolution: 3dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url(("../images/desktop/banner/Image-3x.jpg"));
+                    }
+                }
+        
+        
+                @media screen and (min-width:1200px) {
+        
+                    padding-top: 200px;
+                    padding-bottom: 200px;
+                }
+}
+
+
+.section-banner__title {
+    color: $background-main;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:480px) {
+    .section-banner__title {
+
+    width: 360px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: calc(42 / 26);}
+}
+
+@media screen and (min-width:1200px) {
+    .section-banner__title{
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);}
+}
+
+
+.section-banner__button {
+    font-family: Roboto;
+    background-color: #2196F3;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: $secondFontSize;
+    line-height: calc(30/16);
+    line-height: 1.6;
+    align-items: Center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    min-width: 200px;
+    height: 50px;
+    top: 430px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+    border-color: transparent;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width:1200px) {
+    .section-banner__button{
+    padding: 10px 32px;}
+}
+
+.section-banner__button:hover,
+.section-banner__button:focus {
+    background-color: #188ce8;
+}
+
+

@@ -1,0 +1,35 @@
+.logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: $main-text-color;
+    list-style: none;
+    text-decoration: none;
+}
+
+.web-logo {
+    color: $rare-color;
+}
+
+.footer .logo {
+    display: block;
+    color: $background-main;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.logo-footer {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: $background-main;
+    margin-bottom: 20px;
+}

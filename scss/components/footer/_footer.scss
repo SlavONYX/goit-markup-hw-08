@@ -1,0 +1,76 @@
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media screen and (max-width:767px) {
+            gap: 60px;
+    }
+    
+    @media screen and (min-width:768px) {
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+    
+    }
+    
+    @media screen and (min-width:1200px) {
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+
+.footer-address {
+    text-align: center;
+    
+        @media screen and (min-width:1200px) {
+            text-align: start;
+        }
+}
+
+.footer-contacts__map {
+    font-style: normal;
+    line-height: 24px;
+    line-height: calc(24 / 14);
+    line-height: 1.46;
+    color: $background-main;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-contacts__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-contacts__list .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+.footer-contact__link {
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 24px;
+    line-height: 1.46;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    padding: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contact__link:hover,
+.footer-contact__link:focus {
+    color: $rare-color;
+}

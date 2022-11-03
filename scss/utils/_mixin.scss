@@ -1,0 +1,15 @@
+// @mixin flexed ($gap, $jc: center, $ai: center, $direction: row, $wrapper: wrap) {
+//     display: flex;
+//     gap: $gap;
+//     justify-content: $jc;
+//     align-items: $ai;
+//     flex-flow: $direction $wrapper;
+// }
+
+// @mixin font ($fw: 400, $fs: 16px, $lh: 25px, $ta: null, $cl: null) {
+//     font-weight: $fw;
+//     font-size: $fs;
+//     line-height: calc($lh/$fs);
+//     text-align: $ta;
+//     color: $cl;
+// }
